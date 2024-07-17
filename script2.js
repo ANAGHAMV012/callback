@@ -6,4 +6,4 @@ function main(){
     const res = add(3,4);
     console.log(res);
 }
-main();  
+main();

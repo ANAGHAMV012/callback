@@ -16,7 +16,7 @@ function main(){
     objs.forEach((item) => {
         const bt = document.createElement('button');
         bt.innerHTML = item.name;
-        bt.onclick = myCallback;
+        bt.onclick = getCallback(item.msg);
         document.body.appendChild(bt);
     });
 }
@@ -25,7 +25,9 @@ function getCallBack(arg){
         alert(arg)
     }
 }
-function myCallback(){
-    alert('hi');
+function getCallback(arg){
+    return function(){
+        alert(arg);
+    }
 }
 main();
