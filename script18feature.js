@@ -3,7 +3,7 @@ let handle = null;
 export function changeBg(){
     if(!handle){
         handle = setInterval(() => {
-            document.body.style.background = isGreen ? 'green' : 'blue';
+            document.body.style.background = isGreen ? 'green' : 'blue' ;
             isGreen = !isGreen;
         }, 500);
     }
